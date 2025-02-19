@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+ <style>
+    body{
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    .login{
+        border: 1px solid black;
+        width: 500px;
+        height: 640px;
+        background: url("1000_F_887594750_Uz3r8RDeQU3zggIsATFmOQ2NmIYODvTE (1).jpg");
+        color: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+    form{
+        display: block;
+        box-sizing: border-box;
+        padding: 40px;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: brightness(50%);
+        flex-direction: column;
+        display: flex;
+        gap: 5px;
+    }
+    h1{
+        font-weight: normal;
+        font-size: 24px;
+        text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+        margin-bottom: 60px;
+    }
+    label{
+        color: rgba(255,255,255,0.8);
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 2px;
+        padding-left: 10px;
+    }
+    input{
+        background: rgba(255,255,255,0.8);
+        height: 40px;
+        line-height: 40px;
+        border-radius: 20px;
+        padding: 0px 20px;
+        border: none;
+        margin-bottom: 20px;
+        color:black;
+        font-size: 18px;
+
+    }
+    button{
+        background: rgb(45,126,231);
+        height: 40px;
+        line-height: 40px;
+        border-radius: 40px;
+        border: none;
+        margin: 10px 0px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+        color: white;
+        cursor: pointer;
+    }
+    .a{
+        cursor: pointer;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .a:hover{
+        zoom: 1.02;
+    }
+ </style>
+</head>
+<body>
+    <div class="login">
+            <form action="register.php" method="post">
+            <h1>create account :</h1>
+            <label>Name :</label>
+            <input type="text" name="name" placeholder="Name" required>
+            <label>Email-id :</label>
+            <input type="email" name="email" placeholder="abc@gamil.com" required>
+            <label>Password :</label>
+            <input type="password" name="password" placeholder="password" required>
+            <label>re-enter password :</label>
+            <input type="password" name="re_enter_password" placeholder="re-enter password" required>
+            <label>Mobile no :</label>
+            <input type="text" name="mobile_no" placeholder="mobile no" required>
+            <button type="submit"><a >Create account</a></button>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

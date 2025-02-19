@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Online Bus Reservation</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+    *{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+     .bus{
+        background-image: url(mercedes-benz-autonomous-electric-bus-future-bus-wallpaper-preview.jpg);
+        border: 1px solid black;
+        width: 100%;
+        height:100%;
+        background-size:cover;
+        /* filter: blur(2px); */
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+     }
+     .nav {
+        background-color: #47627d;
+        color: #fff;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list-iteam {
+        list-style-type: none;
+        display:flex;
+        justify-content:center ;
+        align-items: center;
+        background-color:#47627d ;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+    nav ul li {
+        margin-left: 2rem;
+        background-color:#47627d ;
+        
+    } 
+    a:hover {
+        color: #18bc9c;
+    }
+    .mar{
+        height: 40px;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    main{
+        height: 485px;
+        width: 100%;
+        display: flex;
+        padding: 0px;
+        /*background-image: url(1000_F_887594750_Uz3r8RDeQU3zggIsATFmOQ2NmIYODvTE.jpg);*/
+        /*background-image: url(bus1.jpg);*/
+       /* background-repeat: no-repeat;
+        background-size: contain;*/
+    }
+    .left-section{
+        height: 100%;
+        width: 50%;
+        margin: 0px;
+        background-image: url(1000_F_887594750_Uz3r8RDeQU3zggIsATFmOQ2NmIYODvTE.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: right;
+    }
+    .right-section{
+        height: 100%;
+        width: 50%;
+        background-image: url(bus000.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: left;
+    }
+     .foot{
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+           position: absolute;
+           width: 100%;
+        }
+        p,h2{
+            color: #727070;
+        }
+   </style>
+</head>
+<body>
+   <div class="bus">
+    <nav class="nav">
+        <div class="logo">Bus Reservation</div>
+        <ul class="list-iteam">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Search Bus</a></li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="login.html">Sign-in</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="mar">
+        <marquee behavior="" direction="">Please Sign-in to Booking your seat and enjoy your jounry</marquee>
+    </div>
+   <main>
+       <section class="left-section">
+        <h2>Welcome to the Online</h2>
+        <p>Book your bus tickets</p>
+       </section>
+       <section class="right-section">
+        <h2 style="padding-left: 7px;">Bus Reservation System</h2>
+        <p style="padding-left: 7px;">easily and quickly.</p>
+       </section>
+   </main>
+   <div class="foot">
+           <p>&copy; 2025 Online Bus Reservation System</p>
+   </div>
+    </body>
+    </html>

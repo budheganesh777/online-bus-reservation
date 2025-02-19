@@ -1,0 +1,96 @@
+ <?php
+ session_start();
+ $email = $_SESSION['user_id'];
+ if ($_POST){
+   $_SESSION['email'] =$_POST['email']; 
+ }
+    ?>
+<html>
+ <body>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Reservation</title>
+    <style>
+        *{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+      }
+ .bus{
+    background-image: url(mercedes-benz-autonomous-electric-bus-future-bus-wallpaper-preview.jpg);
+    border: 1px solid black;
+    width: 100%;
+    height:800px;
+    background-size:cover;
+    /* filter: blur(2px); */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+     }
+.sign-in{
+   background-color: rgba(232, 228, 228, 0.96);
+    height: 200px;
+    width: 300px;
+   margin-left: 600px;
+   margin-top: 200px;
+   border-radius: 15px;
+   background-image: none;
+    }
+.sign-in h1{
+   padding-left: 10px;
+   padding-top: 10px;
+   }
+input[type=email], input[type=password] {
+   width: 95%;
+   height:30px;
+   border: none;
+   }
+.sign{
+   padding-left: 10px;
+   }
+button[type=submit]{
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+    }
+.sign a:hover{
+   zoom: 1.02;
+   }
+   label{
+      position: absolute;
+      /* left: 50px;
+      top: 65px; */
+      background: #fff;
+      padding: 0px 5px;
+      transition: transform 0.3s ease,
+      color 0.3s ease;
+   }
+   input:focus+label{
+      transform: translateY(-25px);
+      color: #0051ff;
+   }
+   input:focus{
+      border-color: #0051ff;
+   }
+    </style>
+</head>
+<body>
+    <div class="bus">
+        <div class="sign-in">
+            <h1>Forgot Password : </h1>
+            <div class="sign">
+                <form action="forpass1.php" method="post">
+                   <label><b>New Password:</b></label><br>
+                   <input type="password" name="newpassword" placeholder="New Password" required>
+                   <br>
+                   <br>
+                   <button type="submit" name="sign_in" style="background-color: aqua;">Forgot Password</button><br><br>
+                 </form>
+          </div>
+     </div>
+</div>
+ </body>
+ </html> 
